@@ -5,7 +5,7 @@
 #                         Version 1.0 changelog:
 #                        ------------------------
 #       The character can now move across a 2-dimensional array map.
-#           The game quits on reaching a; specified coordinate.
+#           The game quits on reaching a specified coordinate.
 
 from microbit import *
 # Import all the microbit functions
