@@ -5,7 +5,7 @@
 #                         Version 1.0 changelog:
 #                        ------------------------
 #       The character can now move across a 2-dimensional array map.
-#           The game quits on reaching a specified coordinate.
+#           The game quits on reaching a; specified coordinate.
 
 from microbit import *
 # Import all the microbit functions
@@ -77,6 +77,10 @@ def moveChar(x,y):
         areaSet()
     except:
         # Revert to previous location
+        currentLoc = prevLoc
+        areaSet()
+    if refer[currentLoc[0]+x,currentLoc[1]+y] > 0:
+        # If user is in a wall
         currentLoc = prevLoc
         areaSet()
         
